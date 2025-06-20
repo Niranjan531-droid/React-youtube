@@ -16,7 +16,7 @@ const Sidebar=()=>{
             {menuItems.map((item,index)=>(
                 <div key={index} className='flex items-center gap-4 px-5 py-3 hover:bg-gray-100 cursor-pointer transition rounded-lg'>
                     <img src={item.icon} alt={item.label} className='w-6 h-6 object-contain' />
-                    <span className='text-sm font-medium'>{item.label</span>
+                    <span className='text-sm font-medium'>{item.label}</span>
                 </div>
             ))}
 
