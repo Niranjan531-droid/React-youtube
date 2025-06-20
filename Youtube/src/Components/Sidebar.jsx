@@ -1,6 +1,6 @@
 
 function Sidebar(){
-    return(<div className="flex flex-col justify-center align-middle  w-[200px] h-[750px] sticky cursor-pointer">
+    return(<div className="w-[200px] min-h-screen  top-[80px] bg-white fixed z-51">
    <div className="flex h-[120px] hover:bg-gray-300 pt-[30px] ">
     <img className="pl-[20px] h-[40px] " src="home.svg" /><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Home</h3>
    </div>

@@ -2,8 +2,8 @@
 
 function Navbar(){
 
-return(<><header className="flex flex-row items-center justify-between h-[80px] w-full border-b bg-gray-50">
-    <div className="flex  w-[350px] ml-0  "> 
+return(<><header className="flex flex-row items-center justify-between h-[80px] w-full  bg-gray-50 fixed z-50">
+    <div className="flex items-center w-[120px] sm:w-[200px] md:w-[300px] lg:w-[350px]  "> 
     
         <img className="h-[60px] w-[40px] mx-[10px]" src="hamburger-menu.svg" />
         <img className="h-[60px] w-[160px] ml-[15px]" src="youtube-logo.svg" />
