@@ -1,27 +1,24 @@
-import React from 'react';
 
-
-const menuItems =[
-    {label:"Home",icon:"/home.svg"},
-    {label:"Trending",icon:"/explore.svg"},
-    {label:"Subscriptions",icon:"/subscriptions.svg"},
-    {label:"Originals",icon:"/orginals.svg"},
-    {label:"Youtube Music",icon:"/youtube-music.svg"},
-    {label:"Library", icon:"/Library.svg"}
-];
-
-const Sidebar=()=>{
-    return(
-        <aside className='hidden md:flex flex-col w-60 bg-zinc-900 p-4 min-h-screen border-r border-zinc-800' >
-            {menuItems.map((item,index)=>(
-                <div key={index} className='flex items-center gap-4 px-5 py-3 hover:bg-gray-100 cursor-pointer transition rounded-lg'>
-                    <img src={item.icon} alt={item.label} className='w-6 h-6 object-contain' />
-                    <span className='text-sm font-medium'>{item.label}</span>
-                </div>
-            ))}
-
-        </aside>
-    );
-};
-
-export default Sidebar;
+function Sidebar(){
+    return(<div className="flex flex-col justify-center align-middle  w-[200px] h-[750px] sticky cursor-pointer">
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px] ">
+    <img className="pl-[20px] h-[40px] " src="home.svg" /><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Home</h3>
+   </div>
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px]">
+    <img className="pl-[20px] h-[40px]" src="explore.svg" /><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Explore</h3>
+   </div>
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px] ">
+    <img className="pl-[20px] h-[40px]" src="subscriptions.svg"/><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Subscriptions</h3>
+   </div>
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px]">
+    <img className="pl-[20px] h-[40px]" src="originals.svg" /><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Originals</h3>
+   </div>
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px]">
+    <img className="pl-[20px] h-[40px]" src="youtube-music.svg" /><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Youtube music</h3>
+   </div>
+   <div className="flex h-[120px] hover:bg-gray-300 pt-[30px]">
+    <img className="pl-[20px] h-[40px]" src="library.svg"/><h3 className="flex  text-center pl-[20px] pt-[11px] font-bold" >Library</h3>
+   </div>
+    </div>)
+}
+export default Sidebar

@@ -1,27 +1,26 @@
-import React from 'react';
 
-const Navbar=()=>{
-    return(
-        <header className='flex items-center justify-between px-4 py-3 bg-zinc-900 shadow-md sticky top-0 z-50'>
-            <div className='flex items-center gap-2'>
-             <img src='/youtube-logo.svg' alt='Youtube Logo ' className='h-8 w-8'/>
-             <h1 className='text-lg font-bold tracking-wide'>YT Clone</h1>  
 
-            </div>
+function Navbar(){
 
-            <div className='flex-1 mx-4 hidden sm:flex'>
-                <input type='text' placeholder='search' className='w-full px-4 py-2 rounded-l-full bg-zinc-800 text-white placeholder-zinc-400 outline-none' />
-
-                <button className='px-4 py-2 bg-zinc-700 rounded-r-full hover:bg-zinc-600'>
-                   🔍
-                </button>
-            </div>
-            <div className='flex items-center gap-3'>
-            <img src= "./my-channel.jpeg"  className='w-8 h-8 rounded-full'/>
-            </div>
-            </header>
-        
-        
-    )
+return(<><header className="flex flex-row items-center justify-between h-[80px] w-full border-b bg-gray-50">
+    <div className="flex  w-[350px] ml-0  "> 
+    
+        <img className="h-[60px] w-[40px] mx-[10px]" src="hamburger-menu.svg" />
+        <img className="h-[60px] w-[160px] ml-[15px]" src="youtube-logo.svg" />
+    </div>
+    <div className="flex  w-[900px] h-[80px] justify-center align-middle items-center ">
+     <input type="search " placeholder="Search" className="h-[50px]  rounded-l-2xl pl-[10px]  w-[850px] border-2 border-gray-300 " />
+     <button><img className="ml-[-1] w-[70px] h-[50px] border-2 border-gray-200 rounded-r-2xl" src="search.svg" /></button>
+     <button><img className="w-[70px] h-[50px] rounded-[25px] border-2 border-gray-200 " src="voice-search-icon.svg"/></button>
+    </div>
+    <div className="flex w-[270px]  h-[80px]">
+    <img className="h-[70px] w-[40px] mx-[10px] " src="upload.svg"/>
+    <img className="h-[70px] w-[40px] mx-[10px]" src="youtube-apps.svg"/>
+    <img className="h-[70px] w-[40px] mx-[10px]"  src ="notifications.svg"/>
+    <img className="mt-[7px] h-[60px] w-[60px] object-fill rounded-[40px] mx-[10px]" src="cat.jpg"/>
+    </div>
+  
+</header>
+  </>)
 }
 export default Navbar;
